@@ -228,6 +228,17 @@
     min-height: 200px;
     background-color: var(--primary);
     border-radius: var(--borderRadius);
+    text-align: center;
+    padding: 1rem;
+}
+
+.feature-item-detail h3{
+    color: var(--light);
+}
+
+.feature-item-detail p{
+    color: var(--light);
+    font-size: 1.25rem;
 }
 
 @media (max-width: 768px) {
@@ -386,7 +397,8 @@
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    /* box-shadow: 0 0 45px rgba(0, 0, 0, .07); */
+    box-shadow: 0 1px 2px 0 var(--boxshadowColor);
 }
 
 .project-item .project-overlay {
@@ -411,14 +423,27 @@
 
 .project-carousel .owl-nav {
     position: absolute;
-    top: -100px;
+    top: 50%;
     right: 0;
     display: flex;
+    width: 100%;
+}
+
+.project-carousel .owl-nav::after {
+    display: block;
+    clear: both;
+    content: "";
 }
 
 .project-carousel .owl-nav .owl-prev,
 .project-carousel .owl-nav .owl-next {
-    margin-left: 15px;
+    width: 50%;
+}
+
+.project-carousel .owl-nav .btn-slider-prev,
+.project-carousel .owl-nav .btn-slider-next {
+    margin-left: -15px;
+    margin-right: -15px;
     width: 55px;
     height: 55px;
     display: flex;
@@ -431,22 +456,22 @@
     transition: .5s;
 }
 
-.project-carousel .owl-nav .owl-prev:hover,
-.project-carousel .owl-nav .owl-next:hover {
+.project-carousel .owl-nav .btn-slider-prev:hover,
+.project-carousel .owl-nav .btn-slider-next:hover {
     background: var(--primary);
     color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
     .project-carousel .owl-nav {
-        top: -70px;
+        top: 50%;
         right: auto;
         left: 50%;
         transform: translateX(-50%);
     }
 
-    .project-carousel .owl-nav .owl-prev,
-    .project-carousel .owl-nav .owl-next {
+    .project-carousel .owl-nav .btn-slider-prev,
+    .project-carousel .owl-nav .btn-slider-next {
         margin: 0 7px;
         width: 45px;
         height: 45px;
@@ -750,4 +775,11 @@
 
 .mobile-menu-list .navbar-nav{
     margin-top: unset !important;
+}
+
+.slider-container{
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 0 var(--boxshadowColor);
+    border-radius: var(--borderRadius);
 }

@@ -53,27 +53,27 @@
     $(".project-carousel, .testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
-        margin: 25,
+        margin: 10,
         loop: true,
         center: true,
         dots: false,
         nav: true,
         navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
+            '<div class="btn-slider-prev float-start"><i class="bi bi-chevron-left"></i></div>',
+            '<div class="btn-slider-next float-end"><i class="bi bi-chevron-right"></i></div>'
         ],
         responsive: {
 			0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
                 items:2
             },
-            992:{
+            576:{
+                items:2
+            },
+            768:{
                 items:3
+            },
+            992:{
+                items:5
             }
         }
     });
