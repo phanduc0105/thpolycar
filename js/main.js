@@ -49,15 +49,16 @@
         return false;
     });
 
-    // Project and Testimonial carousel
-    $(".project-carousel, .testimonial-carousel").owlCarousel({
+    // product
+    $(".product-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
         margin: 10,
         loop: true,
         center: true,
-        dots: false,
+        dots: true,
         nav: true,
+        lazyLoad: true,
         navText : [
             '<div class="btn-slider-prev float-start"><i class="bi bi-chevron-left"></i></div>',
             '<div class="btn-slider-next float-end"><i class="bi bi-chevron-right"></i></div>'
