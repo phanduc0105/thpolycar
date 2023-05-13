@@ -56,7 +56,7 @@
         margin: 10,
         loop: true,
         center: true,
-        dots: true,
+        dots: false,
         nav: true,
         lazyLoad: true,
         navText : [
