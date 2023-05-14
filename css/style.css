@@ -474,11 +474,11 @@
 }
 
 .product-carousel-img {
-    max-height: 250px;
+    max-height: 245px;
 }
 
 .product-carousel-img img {
-    max-height: 250px;
+    min-height: 100%;
 }
 
 @media (max-width: 768px) {
