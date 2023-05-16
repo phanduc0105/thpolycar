@@ -57,7 +57,7 @@
         smartSpeed: 1000,
         margin: 10,
         loop: true,
-        center: true,
+        center: false,
         dots: false,
         nav: true,
         lazyLoad: true,
@@ -76,7 +76,7 @@
                 items: 3
             },
             992: {
-                items: 5
+                items: 4
             }
         }
     });
@@ -104,9 +104,11 @@
     );
 
     $(window).resize(function () {
+        // Set position left menu
         var left = parseFloat($("#left-menu-main").innerWidth()) + parseFloat($("#left-menu-main").css("padding-right")) + parseFloat($(".container").css("margin-left"));
         $(".left-menu-item").css("left", left + "px");
 
+        // Show/Hide Top mmenu
         if (parseFloat($(this).innerWidth()) <= 992) {
             $('#navbar-categories-products').hide();
             $('#navbar-categories-blogs').show();
@@ -121,6 +123,7 @@
             }
         }
 
+        // Repo
         var heightHeaderCarousel = parseFloat($('.carousel-img').height());
         $('.carousel-item').css("min-height", heightHeaderCarousel + "px");
        
