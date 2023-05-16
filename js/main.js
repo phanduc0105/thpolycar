@@ -121,11 +121,9 @@
             }
         }
 
-        var heightHeaderCarousel = parseFloat($('.carousel-img').innerHeight())
-        if(heightHeaderCarousel == 0){
-            location.reload();
-        }
+        var heightHeaderCarousel = parseFloat($('.carousel-img').height());
         $('.carousel-item').css("min-height", heightHeaderCarousel + "px");
+       
     });
 
     $("#btn-navbar-collapse").click(function () {
