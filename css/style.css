@@ -105,12 +105,14 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+    float: right;
 }
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link {
         margin-right: 0;
-        padding: 10px 0;
+        padding: 5px 0;
+        font-size: 1rem;
     }
 
     .navbar .navbar-nav {
@@ -149,10 +151,10 @@
         color: var(--light) !important;
     }
 
-    .navbar .navbar-nav .nav-link{
+    .navbar .navbar-nav .nav-link:not(.mobile-menu-item){
         color: var(--light) !important;
     }
-
+    
     .navbar-brand{
         margin-right: 0 !important;
     }
@@ -225,7 +227,6 @@
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
-        height: 100%;
         object-fit: cover;
     }
 }
@@ -814,7 +815,7 @@
     display: flex;
     justify-content: center !important;
     text-align: center;
-    font-size: .8rem;
+    font-size: .75rem;
 }
 
 .navbar-bottom-container .row {
