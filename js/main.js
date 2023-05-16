@@ -14,6 +14,7 @@
     // Initiate the wowjs
     new WOW().init();
 
+    // Responsive carousel home page
     var heightHeaderCarousel = parseInt($('.carousel-img').innerHeight())
     $('.carousel-item').css("min-height", heightHeaderCarousel + "px");
 
@@ -81,6 +82,7 @@
         }
     });
 
+    // Set position left menu
     $(".left-menu-container-child").hover(
         function () {
             var left = parseFloat($("#left-menu-main").innerWidth()) + parseFloat($("#left-menu-main").css("padding-right")) + parseFloat($(".container").css("margin-left"));
@@ -91,6 +93,7 @@
         }
     );
 
+    // Set position left menu
     $(".left-menu-item").hover(
         function () {
             var left = parseFloat($("#left-menu-main").innerWidth()) + parseFloat($("#left-menu-main").css("padding-right")) + parseFloat($(".container").css("margin-left"));
@@ -108,7 +111,7 @@
         var left = parseFloat($("#left-menu-main").innerWidth()) + parseFloat($("#left-menu-main").css("padding-right")) + parseFloat($(".container").css("margin-left"));
         $(".left-menu-item").css("left", left + "px");
 
-        // Show/Hide Top mmenu
+        // Show/Hide Top menu
         if (parseFloat($(this).innerWidth()) <= 992) {
             $('#navbar-categories-products').hide();
             $('#navbar-categories-blogs').show();
@@ -123,7 +126,7 @@
             }
         }
 
-        // Repo
+        // Responsive carousel home page
         var heightHeaderCarousel = parseFloat($('.carousel-img').height());
         $('.carousel-item').css("min-height", heightHeaderCarousel + "px");
        
